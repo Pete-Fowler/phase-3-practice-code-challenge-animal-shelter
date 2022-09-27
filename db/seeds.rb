@@ -19,7 +19,7 @@ end
     name: Faker::Name.name, 
     age: Faker::Number.between(from: 1, to: 10), 
     species: Faker::Creature::Animal.name, 
-    adopted?: Faker::Boolean.boolean, 
+    adopted?: Faker::Boolean.boolean(true_ratio: 0.3), 
     shelter_id: rand(1..10), 
     adopter_id: rand(1..10) 
   )
